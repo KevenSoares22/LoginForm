@@ -1,11 +1,11 @@
 let apresentacao = document.querySelector('.apresentacao')
 let login = document.querySelector('.login')
 let cadastro = document.querySelector('.cadastro')
-let divs = document.querySelectorAll('main div')
-let divs22 = [...document.querySelectorAll('main div')]
-
-
-
+let divs = document.querySelectorAll('main > div')
+let divs22 = [...document.querySelectorAll('main > div')]
+let insideRegisterDivs = document.querySelectorAll('.cadastroForm > div')
+let insideDivs = [...document.querySelectorAll('.cadastroForm > div')]
+let divssss = document.querySelectorAll('main div')
 let buttons = document.querySelectorAll('main button.pr')
 let buttonsDiv = document.querySelector('main button.pr').closest('div')
 
@@ -17,29 +17,56 @@ buttons.forEach((button) =>{
         
         let btnClass = button.closest('div')
         let btnIndex = divs22.indexOf(btnClass) + 1
+        let btn = button.value
     
+        if (btn == 1 || btn == 2) {
+        showContent(btn)            
+        } else{
 
-        console.log(a)
+
+        showInsideContent(btnClass)
 
 
-
-        showContent(btnClass, btnIndex)
-
+        }
 
 
     })
 })
-let showContent = (btnClass, btnIndex) =>{
+let showContent = (btnClass) =>{
 
-    console.log(btnClass.className)
+    console.log(divssss)
     divs.forEach((div)=>{
         div.classList.remove('ativo')
 
 
 
     })
+    console.log(divssss)
+
+
+
+
+    divs[btnClass].classList.add('ativo')
+    console.log(divssss)
+
+
+      console.log(divs) 
+}
+
+
+
+let showInsideContent = (btnClass) => {
+
+     let index = insideDivs.indexOf(btnClass) + 1
     
-    divs[4].classList.add('ativo')
-    
+
+    insideRegisterDivs.forEach((registerDiv) =>{
+        registerDiv.classList.remove('ativo')
+
+
+
+    })
+    insideRegisterDivs[index].classList.add('ativo')
+
 
 }

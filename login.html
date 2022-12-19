@@ -27,10 +27,10 @@
             <p>
                 Olá
             </p>
-            <button class="pr">
+            <button class="pr" value="1">
                 Cadastre-se
             </button>
-            <button class="pr">
+            <button class="pr" value="2">
                 Login
             </button>
 
@@ -38,10 +38,61 @@
 
         </div>
 
+        <div class="cadastro">
+            <form action="" method="post" class="cadastroForm">
+
+
+            <div class="nome ativo">
+                <label for="nomeInfo">Insira seu Nome Completo</label>
+                <input type="text" name="nomeInfo" id="nomeInfo" placeholder="Nome">
+                <button type="button" class="pr">Email</button>
+            </div>
+            <div class="email">
+                <label for="emailInfo">Insira seu melhor Email</label>
+                <input type="email" name="emailInfo" id="emailInfo" placeholder="teste@email.com">
+                <button type="button" class="pr">Idade</button>
+            </div>
+            <div class="idade">
+                <label for="idadeInfo">Insira sua Idade</label>
+                <input type="date" name="idadeInfo" id="idadeInfo">
+                <button type="button" class="pr">Sexo</button>
+            </div>
+            <div class="sexo">
+
+
+                <input type="radio" name="M" id="M"> 
+                <label for="M">Masculino</label>
+
+                <input type="radio" name="F" id="F">
+                <label for="F">Feminino</label>
+
+                <input type="radio" name="O" id="O">
+                <label for="O">Outro</label>
+
+
+
+                <button type="button" class="pr">Contato</button>
+            </div>
+            <div class="telefone">
+                <label for="nomeInfo">Insira seu Telefone de Contato</label>
+                <input type="tel" name="nomeInfo" id="nomeInfo" placeholder="Nome">
+                <button type="button" class="pr">Usuario</button>
+            </div>
+            <div class="usuario">
+                <label for="usuarioInfo">Insira seu nome de Usuário</label>
+                <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuario">
+                <button type="button" class="pr">Enviar</button>
+            </div>
+
+
+            </form>
+        </div>
+
+
         <div class="login">
 
-            <form action="" method="post">
-            <div class="usuario">
+            <form action="" method="post" class="loginForm">
+            <div class="usuario ativo">
                 <label for="usuarioInfo">Insira seu Login</label>
                 <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuário">
 
@@ -49,59 +100,16 @@
 
 
 
-        <button type="button" class="pr">Conteudo</button>
+        
             </div>
-            <div class="senha">
+            <div class="senha ativo">
                 <label for="senhaInfo">Insira sua Senha</label>
                 <input type="password" name="senhaInfo" id="senhaInfo" placeholder="Senha">
-        <button type="button" class="pr">Conteudo</button>
+        <button type="button" class="pr">Entrar</button>
             </div>
             </form>
 
         </div>
-
-        <div class="cadastro">
-            <form action="" method="post">
-
-
-            <div class="nome">
-                <label for="nomeInfo">Insira seu Nome Completo</label>
-                <input type="text" name="nomeInfo" id="nomeInfo" placeholder="Nome">
-                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-            </div>
-            <div class="email">
-                <label for="emailInfo">Insira seu melhor Email</label>
-                <input type="email" name="emailInfo" id="emailInfo" placeholder="teste@email.com">
-                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-            </div>
-            <div class="idade">
-                <label for="idadeInfo">Insira sua Idade</label>
-                <input type="date" name="idadeInfo" id="idadeInfo">
-                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-            </div>
-            <div class="sexo">
-                <label for="nomeInfo">Insira seu Sexo</label>
-                <input type="radio" name="M" id="M" placeholder="Nome"> 
-                <input type="radio" name="F" id="F">
-                <input type="radio" name="O" id="O">
-                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-            </div>
-            <div class="telefone">
-                <label for="nomeInfo">Insira seu Telefone de Contato</label>
-                <input type="tel" name="nomeInfo" id="nomeInfo" placeholder="Nome">
-                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-            </div>
-            <div class="usuario">
-                <label for="usuarioInfo">Insira seu nome de Usuário</label>
-                <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuario">
-                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-            </div>
-
-            <button onclick="showContent()" type="button" class="pr">Conteudo</button>
-
-            </form>
-        </div>
-
 
     </main>
     <footer>

@@ -5,6 +5,14 @@
 
 }
 
+
+main div{
+    display: none;
+
+
+
+}
+
 .ativo{
     display: block;
 
@@ -12,11 +20,3 @@
 
 }
 
-
-
-main > div{
-    display: none;
-
-
-
-}
