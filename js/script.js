@@ -8,8 +8,30 @@ let insideDivs = [...document.querySelectorAll('.cadastroForm > div')]
 let divssss = document.querySelectorAll('main div')
 let buttons = document.querySelectorAll('main button.pr')
 let buttonsDiv = document.querySelector('main button.pr').closest('div')
+let labels = document.querySelectorAll('label')
+let inputs = document.querySelectorAll('input')
+
+inputs.forEach((input)=>{
+
+    input.addEventListener('click', ()=>{
+
+        labels.forEach((label)=>{
+
+            
+        label.style.fontSize="14px"
+        label.style.left="180px"
+        label.style.top="-20px"
 
 
+        })
+
+
+
+
+    })
+
+
+})
 buttons.forEach((button) =>{
     button.addEventListener('click', ()=>{
         let a = button.innerHTML
