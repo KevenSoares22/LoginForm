@@ -2,6 +2,21 @@
 
 
 
-    
+
 }
 
+.ativo{
+    display: block;
+
+
+
+}
+
+
+
+main > div{
+    display: none;
+
+
+
+}

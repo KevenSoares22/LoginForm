@@ -22,15 +22,15 @@
         </div>
     </header>
     <main>
-        <div class="apresentacao">
+        <div class="apresentacao ativo">
 
             <p>
                 Olá
             </p>
-            <button>
+            <button class="pr">
                 Cadastre-se
             </button>
-            <button>
+            <button class="pr">
                 Login
             </button>
 
@@ -44,10 +44,17 @@
             <div class="usuario">
                 <label for="usuarioInfo">Insira seu Login</label>
                 <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuário">
+
+
+
+
+
+        <button type="button" class="pr">Conteudo</button>
             </div>
             <div class="senha">
                 <label for="senhaInfo">Insira sua Senha</label>
                 <input type="password" name="senhaInfo" id="senhaInfo" placeholder="Senha">
+        <button type="button" class="pr">Conteudo</button>
             </div>
             </form>
 
@@ -60,30 +67,37 @@
             <div class="nome">
                 <label for="nomeInfo">Insira seu Nome Completo</label>
                 <input type="text" name="nomeInfo" id="nomeInfo" placeholder="Nome">
+                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
             </div>
             <div class="email">
                 <label for="emailInfo">Insira seu melhor Email</label>
                 <input type="email" name="emailInfo" id="emailInfo" placeholder="teste@email.com">
+                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
             </div>
             <div class="idade">
                 <label for="idadeInfo">Insira sua Idade</label>
                 <input type="date" name="idadeInfo" id="idadeInfo">
+                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
             </div>
             <div class="sexo">
                 <label for="nomeInfo">Insira seu Sexo</label>
                 <input type="radio" name="M" id="M" placeholder="Nome"> 
                 <input type="radio" name="F" id="F">
                 <input type="radio" name="O" id="O">
+                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
             </div>
             <div class="telefone">
                 <label for="nomeInfo">Insira seu Telefone de Contato</label>
                 <input type="tel" name="nomeInfo" id="nomeInfo" placeholder="Nome">
+                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
             </div>
             <div class="usuario">
                 <label for="usuarioInfo">Insira seu nome de Usuário</label>
                 <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuario">
+                <button onclick="showContent()" type="button" class="pr">Conteudo</button>
             </div>
 
+            <button onclick="showContent()" type="button" class="pr">Conteudo</button>
 
             </form>
         </div>
@@ -98,5 +112,9 @@
 
         </div>
     </footer>
+
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
