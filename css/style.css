@@ -18,21 +18,71 @@ input{
     display: block;
     width: 380px;
     padding: 12px;
+    
+
+
+
+
+
+
+
+
+
+
+
 }
 
 label{
     position: relative;
-    left: 200px;
-    cursor: alias;
-    transition: 1s;
+    right: 250px;
+    top: 0px;
+    transition: 0.4s;
     background-color: white;
+}
+
+
+
+input:focus ~ label{
+
+
+    letter-spacing: 0.4px;
+    font-size: 14px;
+
+    transition: 0.4s;
+    top: -22px;
+    
 }
 
 .ativo{
     display: flex;
+
+
+
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 60vh;
+}
+
+
+
+form > .ativo button{
+    position: relative;
+    top: 60px;
+    left: -140px;
+
+}
+
+
+
+form > .ativo > input
+{
+
+    position: relative;
+    left: 140px;
+
+
+
 }
 main{
     margin: 0 auto;
