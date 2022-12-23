@@ -8,9 +8,35 @@ main div{
 button{
     margin: 20px;
     padding: 20px;
+    width: 26vh;
+    cursor:pointer;
 
+    transition: 0.4s;
+    
+}
+
+
+
+.apresentacao button{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+
+
+
+    border-radius: 40px;
+    border: solid 1px black;
+    background-color: rgb(255, 255, 255);
+}
+
+
+button.login{
+    background-color: rgb(5, 34, 34);
+    color: white;
+    border-color: rgb(5, 34, 34);
 
 }
+
 input:focus{
     outline: none; 
 }
@@ -31,7 +57,11 @@ input{
 
 
 }
+main > div{
+    justify-content: center;
 
+
+}
 label{
     position: relative;
     right: 250px;
@@ -39,7 +69,15 @@ label{
     transition: 0.4s;
     background-color: white;
 }
+form{
 
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+
+}
 
 
 input:focus ~ label{
@@ -52,16 +90,13 @@ input:focus ~ label{
     top: -22px;
     
 }
-
+div{}
 .ativo{
     display: flex;
-
-
-
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    width: 100%;    
     height: 60vh;
+
 }
 
 
