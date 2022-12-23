@@ -1,3 +1,20 @@
+.menu{
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+
+.menu p{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+
+}
+
+
 
 main div{
     display: none;
