@@ -1,5 +1,9 @@
 .menu{
     text-align: center;
+
+
+
+    border: none;
     border-bottom: 1px solid black;
     
 }
@@ -30,6 +34,10 @@ button{
 
     transition: 0.4s;
     
+    background-color: rgb(5, 34, 34);
+    color: white;
+    border-color: rgb(5, 34, 34);
+    border-radius: 20px;
 }
 
 
@@ -42,18 +50,35 @@ button{
 
 
     border-radius: 40px;
+
+
+
+}
+
+
+button.loginBtn{
+
+
+
+    color: black;
     border: solid 1px black;
     background-color: rgb(255, 255, 255);
 }
+.row label{
+    margin: 20px;
+    
 
-
-button.login{
-    background-color: rgb(5, 34, 34);
-    color: white;
-    border-color: rgb(5, 34, 34);
 
 }
 
+
+
+.row{
+
+    margin: 40px;
+
+
+}
 input:focus{
     outline: none; 
 }
@@ -61,7 +86,11 @@ input{
     display: block;
     width: 380px;
     padding: 12px;
-    
+
+
+
+    border: none;
+    border-bottom: 1px solid black;
 
 
 
@@ -81,10 +110,14 @@ main > div{
 }
 label{
     position: relative;
-    right: 250px;
+    right: 100px;
     top: 0px;
     transition: 0.4s;
     background-color: white;
+    pointer-events: none;
+
+
+
 }
 form{
 
@@ -95,7 +128,12 @@ form{
 
 
 }
+.email{
+    
 
+
+
+}
 
 input:focus ~ label{
 
@@ -119,9 +157,12 @@ div{}
 
 
 form > .ativo button{
-    position: relative;
-    top: 60px;
-    left: -140px;
+    position: absolute;
+    top: 260px;
+    right: 460px;
+
+
+
 
 }
 
@@ -130,12 +171,77 @@ form > .ativo button{
 form > .ativo > input
 {
 
-    position: relative;
-    left: 140px;
+    position: absolute;
+    right: 480px;
+    animation-name: inputIn;
+    animation-duration: 2s;
 
+}
+
+
+.login{
+    margin-top: 60px;
+}
+.usuario{
+
+
+
+    position: absolute;
+    transform: translateX(-50%);
+
+
+
+    left: 50%;
+
+    height: 60%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 20px;
 
 
 }
+
+.usuario{
+    display: none;
+    padding: 40px;
+
+
+}
+
+.user{
+
+    display: block;
+
+    
+}
+.usuario input{
+
+    
+    position: relative;
+    top: 10vh;
+    left: 0vh;
+
+
+
+    margin-bottom: 20px;
+}
+
+
+
+
+.usuario button{
+    position: absolute;
+    top: 50vh;
+
+
+}
+.usuario label{
+    position: relative;
+    left: 20px;
+    top: 18px;
+
+}
+
 main{
     margin: 0 auto;
 
@@ -156,3 +262,33 @@ footer{
     height: 6%;
     width: 100%;
 }
+.transparencyOut{
+
+    animation-name: transparencyOut;
+    animation-duration: 1.6s;
+
+}
+.transparencyIn{
+    animation-name: transparencyIn;
+    animation-duration: 1.6s;
+}
+
+
+
+@keyframes transparencyOut{
+    from{opacity: 1;}
+    to{opacity: 0;}
+
+
+}
+
+
+
+@keyframes transparencyIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+
+
+}
+
+

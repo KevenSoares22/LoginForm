@@ -30,7 +30,7 @@
             <button class="pr" value="1">
                 Cadastre-se
             </button>
-            <button class="pr login" value="2">
+            <button class="pr loginBtn" value="2">
                 Login
             </button>
 
@@ -43,7 +43,7 @@
             <div class="nome ativo">
                 <input type="text" name="nomeInfo" id="nomeInfo">
                 <label for="nomeInfo">Insira seu Nome Completo</label>
-                <button type="button" class="pr">Email</button>
+                <button type="button" class="pr">Continuar</button>
 
 
 
@@ -52,48 +52,48 @@
             <div class="email">
                 <input type="email" name="emailInfo" id="emailInfo">
                 <label for="emailInfo">Insira seu melhor Email</label>
-                <button type="button" class="pr">Idade</button>
+                <button type="button" class="pr">Continuar</button>
             </div>
             <div class="idade">
 
                 
                 <input type="date" name="idadeInfo" id="idadeInfo">
-                <label for="idadeInfo">Insira sua Idade</label>
-                <button type="button" class="pr">Sexo</button>
+                
+                <button type="button" class="pr">Continuar</button>
             </div>
-            <div class="sexo">
+            <div class="sexo row">
 
 
-                <input type="radio" name="M" id="M"> 
+                <input type="radio" name="sex" id="M" value="Male"> 
                 <label for="M">Masculino</label>
 
-                <input type="radio" name="F" id="F">
+                <input type="radio" name="sex" id="F" value="Female">
                 <label for="F">Feminino</label>
 
-                <input type="radio" name="O" id="O">
+                <input type="radio" name="sex" id="O" value="Other">
                 <label for="O">Outro</label>
 
 
 
-                <button type="button" class="pr">Contato</button>
+                <button type="button" class="pr">Continuar</button>
             </div>
             <div class="telefone">
 
 
 
                 
-                <input type="tel" name="nomeInfo" id="nomeInfo" placeholder="Nome">
+                <input type="tel" name="nomeInfo" id="nomeInfo">
                 <label for="nomeInfo">Insira seu Telefone de Contato</label>
-                <button type="button" class="pr">Usuario</button>
+                <button type="button" class="pr">Continuar</button>
             </div>
-            <div class="usuario">
+            <div class="usuarioInfo">
 
 
 
                 
-                <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuario">
+                <input type="text" name="usuarioInfo" id="usuarioInfo">
                 <label for="usuarioInfo">Insira seu nome de Usuário</label>
-                <button type="button" class="pr">Enviar</button>
+                <button type="button" class="pr">Concluir Cadastro</button>
             </div>
 
 
@@ -104,19 +104,16 @@
         <div class="login">
 
             <form action="" method="post" class="loginForm">
-            <div class="usuario ativo">
+            <div class="usuario">
+
+                
+                <input type="text" name="usuarioInfo" id="usuarioInfo">
                 <label for="usuarioInfo">Insira seu Login</label>
-                <input type="text" name="usuarioInfo" id="usuarioInfo" placeholder="Usuário">
 
+                <input type="password" name="senhaInfo" id="senhaInfo">
 
-
-
-
-        
-            </div>
-            <div class="senha ativo">
                 <label for="senhaInfo">Insira sua Senha</label>
-                <input type="password" name="senhaInfo" id="senhaInfo" placeholder="Senha">
+
         <button type="button" class="pr">Entrar</button>
             </div>
             </form>
@@ -138,3 +135,5 @@
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+

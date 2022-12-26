@@ -10,16 +10,20 @@ let buttons = document.querySelectorAll('main button.pr')
 let buttonsDiv = document.querySelector('main button.pr').closest('div')
 let labels = document.querySelectorAll('label')
 let inputs = document.querySelectorAll('input')
-
+let user = document.querySelector('form > .usuario')
 
 buttons.forEach((button) =>{
     button.addEventListener('click', ()=>{
+
+
         let a = button.innerHTML
         
         
         let btnClass = button.closest('div')
         let btnIndex = divs22.indexOf(btnClass) + 1
         let btn = button.value
+    
+        
     
         if (btn == 1 || btn == 2) {
         showContent(btn)            
@@ -32,27 +36,50 @@ buttons.forEach((button) =>{
         }
 
 
+
+
+
+
     })
 })
 let showContent = (btnClass) =>{
-
+    
+        
     console.log(divssss)
     divs.forEach((div)=>{
         div.classList.remove('ativo')
 
 
+        div.classList.remove('transparencyIn')
 
     })
-    console.log(divssss)
+    console.log(btnClass)
+
+
+    
+    
+    setInterval(()=>{
+        
+    })
 
 
 
-
+    divs[btnClass].classList.add('transparencyIn')
     divs[btnClass].classList.add('ativo')
+
+
+
+    if (btnClass == 2) {
+
+    user.classList.add('user')
+    } else {
+        
+    }
     console.log(divssss)
 
 
       console.log(divs) 
+        console.log(user)
 }
 
 
@@ -62,13 +89,24 @@ let showInsideContent = (btnClass) => {
      let index = insideDivs.indexOf(btnClass) + 1
     
 
+    insideRegisterDivs[index - 1].classList.add('transparencyOut')
     insideRegisterDivs.forEach((registerDiv) =>{
         registerDiv.classList.remove('ativo')
 
 
 
     })
+
+
+    insideRegisterDivs[index].classList.add('transparencyIn')
     insideRegisterDivs[index].classList.add('ativo')
+
+    
+}
+
+let transition = () =>{
+
+    
 
 
 }
