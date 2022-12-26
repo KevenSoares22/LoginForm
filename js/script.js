@@ -11,6 +11,14 @@ let buttonsDiv = document.querySelector('main button.pr').closest('div')
 let labels = document.querySelectorAll('label')
 let inputs = document.querySelectorAll('input')
 let user = document.querySelector('form > .usuario')
+let loginBtn = document.querySelector('.loginBtn')
+
+
+
+let username = document.querySelector('#usuarioInfo')
+let password = document.querySelector('#senhaInfo')
+
+
 
 buttons.forEach((button) =>{
     button.addEventListener('click', ()=>{
@@ -89,7 +97,7 @@ let showInsideContent = (btnClass) => {
      let index = insideDivs.indexOf(btnClass) + 1
     
 
-    insideRegisterDivs[index - 1].classList.add('transparencyOut')
+    
     insideRegisterDivs.forEach((registerDiv) =>{
         registerDiv.classList.remove('ativo')
 
@@ -104,9 +112,17 @@ let showInsideContent = (btnClass) => {
     
 }
 
-let transition = () =>{
+let tryLogin = () =>{
 
-    
+    let usName = username.value
+    let pass = password.value
+
+    if (usName=="" && pass=="") {
+        
+    login.style.display = "none"
+    } else {
+        alert('Usuario ou Senha Incorreto')
+    }
 
 
 }

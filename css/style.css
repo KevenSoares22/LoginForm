@@ -73,16 +73,10 @@ button.loginBtn{
 
 
 
-.row{
-
-    margin: 40px;
-
-
-}
-input:focus{
+input.Info:focus{
     outline: none; 
 }
-input{
+input.Info{
     display: block;
     width: 380px;
     padding: 12px;
@@ -108,7 +102,7 @@ main > div{
 
 
 }
-label{
+label.nonRadio{
     position: relative;
     right: 100px;
     top: 0px;
@@ -135,7 +129,7 @@ form{
 
 }
 
-input:focus ~ label{
+input.Info:focus ~ label.nonRadio{
 
 
     letter-spacing: 0.4px;
@@ -154,7 +148,12 @@ div{}
 
 }
 
+.sexo label{
+    cursor: pointer;
+    flex-direction: row;
 
+
+}
 
 form > .ativo button{
     position: absolute;
@@ -168,7 +167,7 @@ form > .ativo button{
 
 
 
-form > .ativo > input
+form > .ativo > input.Info
 {
 
     position: absolute;
@@ -214,7 +213,7 @@ form > .ativo > input
 
     
 }
-.usuario input{
+.usuario input.Info{
 
     
     position: relative;
