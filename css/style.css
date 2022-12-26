@@ -122,14 +122,16 @@ form{
 
 
 }
-.email{
-    
+.LogIn{
+    display: none ;
 
 
 
 }
 
-input.Info:focus ~ label.nonRadio{
+input.Info:focus ~ label.nonRadio,
+input.Info:valid ~ label.nonRadio
+{
 
 
     letter-spacing: 0.4px;

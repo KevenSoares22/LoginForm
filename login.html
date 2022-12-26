@@ -41,7 +41,7 @@
         <div class="cadastro">
             <form action="" method="post" class="cadastroForm">
             <div class="nome ativo">
-                <input type="text" name="nomeInfo" class="Info">
+                <input type="text" name="nomeInfo" class="Info" required>
                 <label for="nomeInfo" class="nonRadio">Insira seu Nome Completo</label>
                 <button type="button" class="pr">Continuar</button>
 
@@ -50,7 +50,7 @@
 
             </div>
             <div class="email">
-                <input type="email" name="emailInfo" class="Info">
+                <input type="email" name="emailInfo" class="Info" required>
                 <label for="emailInfo" class="nonRadio">Insira seu melhor Email</label>
                 <button type="button" class="pr">Continuar</button>
             </div>
@@ -82,7 +82,7 @@
 
 
                 
-                <input type="tel" name="nomeInfo" class="Info">
+                <input type="tel" name="nomeInfo" class="Info" required>
                 <label for="nomeInfo" class="nonRadio">Insira seu Telefone de Contato</label>
                 <button type="button" class="pr">Continuar</button>
             </div>
@@ -91,9 +91,9 @@
 
 
                 
-                <input type="text" name="usuarioInfo" class="Info">
+                <input type="text" name="usuarioInfo" class="Info" required>
                 <label for="usuarioInfo" class="nonRadio">Insira seu nome de Usuário</label>
-                <button type="button" class="pr">Concluir Cadastro</button>
+                <button type="button" class="pr" onclick="confirmRegister()">Concluir Cadastro</button>
             </div>
 
 
@@ -107,21 +107,27 @@
             <div class="usuario">
 
                 
-                <input type="text" name="usuarioInfo" id="usuarioInfo" class="Info">
+                <input type="text" name="usuarioInfo" id="usuarioInfo" class="Info" required>
                 <label for="usuarioInfo" class="nonRadio">Insira seu Login</label>
 
-                <input type="password" name="senhaInfo" id="senhaInfo" class="Info">
+                <input type="password" name="senhaInfo" id="senhaInfo" class="Info" required>
 
                 <label for="senhaInfo" class="nonRadio">Insira sua Senha</label>
 
         <button type="button" class="pr" onclick="tryLogin()">Entrar</button>
-            </div>
 
-            <div></div>
+
+
+        
             </form>
 
         </div>
+        
+            </div>
 
+            <div class="LogIn"><h2>
+                Opa
+            </h2></div>
     </main>
     <footer>
         <div class="dados">

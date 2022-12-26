@@ -17,7 +17,7 @@ let loginBtn = document.querySelector('.loginBtn')
 
 let username = document.querySelector('#usuarioInfo')
 let password = document.querySelector('#senhaInfo')
-
+let rLogin = document.querySelector('.LogIn')
 
 
 buttons.forEach((button) =>{
@@ -120,9 +120,13 @@ let tryLogin = () =>{
     if (usName=="" && pass=="") {
         
     login.style.display = "none"
+    rLogin.style.display = "flex"
+
     } else {
         alert('Usuario ou Senha Incorreto')
     }
 
 
 }
+
+
